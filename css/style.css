@@ -1,7 +1,7 @@
 body {
   /*background-color: #D3D3D3;*/
   font-family: 'Comfortaa', cursive;
-  background-image: url(http://www.memorialbridge.info/images/21602/black-and-white-wallpaper-desktop-computers-beautiful-pictures-for.jpg);
+  background-image: url('../img/background-image.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
