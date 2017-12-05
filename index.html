@@ -11,7 +11,10 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v3.3.7/js/affix.js">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://use.fontawesome.com/ebd28d719c.js"></script>
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,9 +32,9 @@
       <div class="column-xs-12 title">
         <nav>
           <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Links</a></li>
-        </ul>
+            <li><a data-toggle="modal" data-target="#myModal">About</a></li>
+            <li><a href="#footLinks">Links</a></li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -49,141 +52,175 @@
       </ul>
     </div>
   </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="myModalLabel">About</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          Hi, I'm Cory. I am a web developer in training. I have an intermediate knowledge of HTML, CSS, and Javascript which I am working to improve on a daily basis. Below you'll find a collection of projects and assignments I have completed during my time at
+          Austin Coding Academy.
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="row first-row">
     <article>
-    <div class="col-md-4 col-md-offset-2 col-xs-12">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+      <div class="col-md-4 col-md-offset-2 col-xs-12">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/airplane.png">
+            </figure>
             <a href="https://cboss1029.github.io/web-workbook/03week/airplane/index.html">
-            <img src="./img/airplane.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
+              <p class="panel-body">
+                This is a web page I had to replicate when learning CSS early on. The purpose of this assignment was to get familiar with the Box Model, its components, as well as <code>position</code> and its properites.
+              </p>
+            </a>
+          </div>
 
+        </div>
       </div>
-    </div>
-  </article>
-  <article>
-    <div class="col-md-4">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+    </article>
+    <article>
+      <div class="col-md-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/tuccis.png">
+            </figure>
             <a href="https://cboss1029.github.io/checkpoint1/index.html">
-            <img src="./img/tuccis.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+              <p class="panel-body">
+                For this project I had to build a website for a business. I chose to replicate the home page of my favorite sandwich shop. I focused on making better use of semantic elements in my HTML. From a visual standpoint it is exactly the same as the original.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
   </div>
   <div class="row">
     <article>
-    <div class="col-md-4 col-md-offset-2">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+      <div class="col-md-4 col-md-offset-2">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/tomorrowstech.png">
+            </figure>
             <a href="https://cboss1029.github.io/web-workbook/04week/tomorrows-technology/index.html">
-            <img src="./img/tomorrowstech.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+              <p class="panel-body">
+                This mock news website was meant to be an exercise in media queries. If you resize the screen you'll notice that there is a different layout for desktop, tablet, and mobile screen sizes.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
-  <article>
-    <div class="col-md-4">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+    </article>
+    <article>
+      <div class="col-md-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/welcome.png">
+            </figure>
             <a href="https://cboss1029.github.io/web-workbook/04week/welcome-to-our-site/index.html">
-            <img src="./img/welcome.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+              <p class="panel-body">
+                This is another media query exercise. Although it is only formatted for desktop and mobile displays I find it to be more visually appealing than the news site.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
   </div>
   <div class="row">
     <article>
-    <div class="col-md-4 col-md-offset-2">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+      <div class="col-md-4 col-md-offset-2">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/bootstrap.png">
+            </figure>
             <a href="https://cboss1029.github.io/web-workbook/05week/news-website/index.html">
-            <img src="./img/bootstrap.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+              <p class="panel-body">
+                Another mock news site. The purpose of this one was to act as an introduction to Bootstrap.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
-  <article>
-    <div class="col-md-4">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+    </article>
+    <article>
+      <div class="col-md-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/transition.png">
+            </figure>
             <a href="https://cboss1029.github.io/web-workbook/05week/transitions-and-transformations/index.html">
-            <img src="./img/transition.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+              <p class="panel-body">
+                This was an exercise in CSS transitions. Half of the squares spin clockwise and move to the right of the screen, while the other half spins counterclockwise and move to the left.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
   </div>
   <div class="row">
     <article>
-    <div class="col-md-4 col-md-offset-2">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
+      <div class="col-md-4 col-md-offset-2">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/dice.png">
+            </figure>
             <a href="https://codepen.io/anon/pen/zPdPWO?editors=0010">
-            <img src="./img/dice.png">
-          </a>
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+              <p class="panel-body">
+                The focus of this assignment was JS conditionals and loops. Five dice are rolled at random and the results are reported in the text area.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
-  <article>
-    <div class="col-md-4">
-      <div class="panel">
-        <div class="panel-heading">
-          <figure>
-            <img src="#">
-          </figure>
-          <p class="panel-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+    </article>
+    <article>
+      <div class="col-md-4">
+        <div class="panel">
+          <div class="panel-heading">
+            <figure>
+              <img src="./img/tic-tac-toe.png">
+            </figure>
+            <a href="https://cboss1029.github.io/web-workbook/08week/tic-tac-toe/index.html">
+              <p class="panel-body">
+                More practice with JS conditional statements, but with a focus on DOM manipulation using jQuery.
+              </p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <footer>
+        <nav id="footLinks">
+          <ul>
+            <li><a href="https://github.com/cBoss1029" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i>
+</li>
+<li><a href="https://www.linkedin.com/in/cory-bosselmann-9453a0129/" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</li>
+<li><a href="https://www.facebook.com/cbosselmann" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i>
+</li>
+      </ul>
+    </nav>
+  </footer>
+</div>
   </div>
 
 
